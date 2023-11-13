@@ -8,6 +8,24 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <h1>Book Store</h1>
+
+
+    <form id="apiForm">
+      <label for="resource">Resource:</label>
+      <input type="text" id="resource" name="resource" required>
+  
+      <label for="id">ID (if applicable):</label>
+      <input type="text" id="id" name="id">
+  
+      <button type="button" onclick="getApi()">GET</button>
+      <button type="button" onclick="postApi()">POST</button>
+      <button type="button" onclick="putApi()">PUT</button>
+      <button type="button" onclick="deleteApi()">DELETE</button>
+    </form>
+  
+    <!-- Display area for API response -->
+    <div id="response"></div>
     
 </body>
 </html>
